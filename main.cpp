@@ -34,7 +34,9 @@ int main() {
         return 1;
     }
 
-    strategy->traverse(matrix, 0, 0, width, height);
+    unsigned long centerRow = height / 2;
+    unsigned long centerCol = width / 2;
+    strategy->traverse(matrix, centerRow, centerCol, width, height);
 
     return 0;
 }
